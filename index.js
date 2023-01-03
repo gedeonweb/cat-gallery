@@ -31,32 +31,37 @@ fetch(
     let img3 = document.getElementById("img3");
     let img4 = document.getElementById("img4");
 
-    img0.addEventListener("click", () => {
+    img0.addEventListener("click", (e) => {
+      e.preventDefault();
       (cat.src = `${imgCat0}`)
         ? (cat.innerHTML = `<img src="${imgCat0}" width="500px" class="imgCat" />`)
         : "";
     });
 
-    img1.addEventListener("click", () => {
+    img1.addEventListener("click", (e) => {
+      e.preventDefault();
       (cat.src = `${imgCat1}`)
         ? (cat.innerHTML = `<img src="${imgCat1}" width="500px" class="imgCat" />`)
         : "";
     });
 
-    img2.addEventListener("click", () => {
+    img2.addEventListener("click", (e) => {
+      e.preventDefault();
       if ((cat.src = `${imgCat2}`)) {
         cat.innerHTML = `<img src="${imgCat2}" width="500px" class="imgCat" />`;
       } else {
       }
     });
 
-    img3.addEventListener("click", () => {
+    img3.addEventListener("click", (e) => {
+      e.preventDefault();
       (cat.src = `${imgCat3}`)
         ? (cat.innerHTML = `<img src="${imgCat3}" width="500px" class="imgCat" />`)
         : "";
     });
 
-    img4.addEventListener("click", () => {
+    img4.addEventListener("click", (e) => {
+      e.preventDefault();
       (cat.src = `${imgCat4}`)
         ? (cat.innerHTML = `<img src="${imgCat4}" width="500px" class="imgCat" />`)
         : "";
